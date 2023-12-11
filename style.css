@@ -1,0 +1,39 @@
+.content h1 {
+    font-family: sans-serif;
+}
+
+path {
+    stroke: white;
+    stroke-width: 0.8px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.footer {
+    text-align: center;
+    font-size: 12px;
+    font-family: sans-serif;
+    color: gray;
+}
+
+.bar-text {
+    font-family: sans-serif;
+}
