@@ -59,7 +59,7 @@ var promises = []; //array que contendrá las promesas
 
 /*Meto en una variable promesas los csv que abro para cada mes*/
 for (var i = 1; i <= 12; i++) {
-    promises.push(d3.csv("datos-" + getMonthName(i) + ".csv"));
+    promises.push(d3.csv("datos-mapa/datos-" + getMonthName(i) + ".csv"));
 }
 promises.push(d3.json("europe.geojson"));
 
