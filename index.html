@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+
+<head>
+    <link rel="icon" type="image/png" href="imagen_avion.png" />
+    <!--"https://icons8.com/icon/15121/airplane-take-off"-->
+    <title>Mapa vuelos a Europa</title>
+</head>
+<style>
+
+</style>
+
+<body>
+    <main class="wrapper">
+        <div class="content">
+            <h1>Vuelos con destino a cada país de Europa</h1>
+            <input type="range" id="dataSlider" min="1" max="12" value="1" step="1" />
+            <div id="selectedMonthIndicator"></div>
+        </div>
+    </main>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <div class="footer">
+        <p>Alejandra Gavino-Dias González</p>
+        <p>
+            Fuente: <a href="https://www.kaggle.com/datasets/iamsouravbanerjee/airline-dataset/data" target="_blank"
+                style="color: blue">Dataset en Kaggle</a>
+        </p>
+    </div>
+</body>
