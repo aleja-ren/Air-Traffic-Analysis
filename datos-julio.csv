@@ -1,0 +1,46 @@
+country,code,flights
+Albania,AL,1
+Andorra,AD,1
+Austria,AT,13
+Belarus,BY,7
+Belgium,BE,6
+Bosnia and Herzegovina,BA,4
+Bulgaria,BG,12
+Croatia,HR,4
+Czech Republic,CZ,11
+Denmark,DK,15
+Estonia,EE,6
+Faroe Islands,FO,1
+Finland,FI,35
+France,FR,119
+Germany,DE,96
+Gibraltar,GI,1
+Greece,GR,38
+Greenland,GL,29
+Guernsey,GG,2
+Hungary,HU,7
+Iceland,IS,36
+Ireland,IE,17
+Italy,IT,56
+Latvia,LV,3
+Lithuania,LT,8
+Malta,MT,1
+Moldova,MD,2
+Monaco,MC,1
+Montenegro,ME,3
+Netherlands,NL,11
+Macedonia,MK,5
+Norway,NO,45
+Poland,PL,11
+Portugal,PT,16
+Romania,RO,22
+Russian Federation,RU,122
+Serbia,RS,1
+Slovakia,SK,5
+Slovenia,SI,3
+Spain,ES,45
+Sweden,SE,69
+Switzerland,CH,17
+Turkey,TR,3
+Ukraine,UA,38
+United Kingdom,GB,109
