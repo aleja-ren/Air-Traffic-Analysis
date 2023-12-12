@@ -1,10 +1,11 @@
 # AnalisisVuelos
 <details><summary>Table of Conents</summary>
 
-1. Descripción
-2. Vista
-3. Uso
-4. Autor y Referencias
+1. [Descripción](https://gitlab.inf.uva.es/desi_23-24/analisisvuelos/-/edit/main/README.md?ref_type=heads#descripci%C3%B3n)
+2. [Vista](https://gitlab.inf.uva.es/desi_23-24/analisisvuelos/-/edit/main/README.md?ref_type=heads#vista)
+3. [Herramientas](https://gitlab.inf.uva.es/desi_23-24/analisisvuelos/-/edit/main/README.md?ref_type=heads#herramientas)
+4. [Uso](https://gitlab.inf.uva.es/desi_23-24/analisisvuelos/-/edit/main/README.md?ref_type=heads#uso)
+5. [Autor y Referencias](https://gitlab.inf.uva.es/desi_23-24/analisisvuelos/-/edit/main/README.md?ref_type=heads#autor-y-referencias)
 </details>
 
 ## Descripción
