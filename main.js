@@ -270,6 +270,7 @@ function ready(europe) {
                 .attr("stroke", "black");
 
             // Indicador del pais debajo del diagrama de barras
+            console.log(d[0].properties.name);
             svg2
                 .append("text")
                 .attr("id", "clickInfo")
