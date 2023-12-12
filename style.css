@@ -1,6 +1,7 @@
 .content h1 {
     font-family: sans-serif;
     background-color: skyblue;
+    align-items: center;
     position: absolute;
     left: 0px;
     right: 0px;
