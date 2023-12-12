@@ -1,11 +1,11 @@
 # AnalisisVuelos
 <details><summary>Table of Conents</summary>
 
-1. [Descripción](https://gitlab.inf.uva.es/desi_23-24/analisisvuelos/-/edit/main/README.md?ref_type=heads#descripci%C3%B3n)
-2. [Vista](https://gitlab.inf.uva.es/desi_23-24/analisisvuelos/-/edit/main/README.md?ref_type=heads#vista)
-3. [Herramientas](https://gitlab.inf.uva.es/desi_23-24/analisisvuelos/-/edit/main/README.md?ref_type=heads#herramientas)
-4. [Uso](https://gitlab.inf.uva.es/desi_23-24/analisisvuelos/-/edit/main/README.md?ref_type=heads#uso)
-5. [Autor y Referencias](https://gitlab.inf.uva.es/desi_23-24/analisisvuelos/-/edit/main/README.md?ref_type=heads#autor-y-referencias)
+1. [Descripción](https://gitlab.inf.uva.es/desi_23-24/analisisvuelos/-/tree/main#descripci%C3%B3n)
+2. [Vista](https://gitlab.inf.uva.es/desi_23-24/analisisvuelos/-/tree/main#vista)
+3. [Herramientas](https://gitlab.inf.uva.es/desi_23-24/analisisvuelos/-/tree/main#herramientas)
+4. [Uso](https://gitlab.inf.uva.es/desi_23-24/analisisvuelos/-/tree/main#uso)
+5. [Autor y Referencias](https://gitlab.inf.uva.es/desi_23-24/analisisvuelos/-/tree/main#autor-y-referencias)
 </details>
 
 ## Descripción
