@@ -1,17 +1,17 @@
 # AnalisisVuelos
 <details><summary>Table of Conents</summary>
 
-1. [Descripción](https://gitlab.inf.uva.es/desi_23-24/analisisvuelos/-/blob/main/README.md?plain=0#description)
-2. [Visuals](https://gitlab.inf.uva.es/desi_23-24/analisisvuelos/-/edit/main/README.md?ref_type=heads#visuals)
-3. [Usage](https://gitlab.inf.uva.es/desi_23-24/analisisvuelos/-/edit/main/README.md?ref_type=heads#usage)
-4. [Autor y Referencias](https://gitlab.inf.uva.es/desi_23-24/analisisvuelos/-/edit/main/README.md?ref_type=heads#autor-y-referencias)
+1. Descripción
+2. Vista
+3. Uso
+4. Autor y Referencias
 </details>
 
-## Description
+## Descripción
 aaaaaaa
 
 
-## Visuals
+## Vista
 aaaaaaaa
 
 ## Herramientas
@@ -19,7 +19,7 @@ Para realizar esta visualización se ha utilizado la librería d3, para más inf
 Las herramientas web para realizar la escala de color del mapa está referenciada en las [herramientas usadas](https://gitlab.inf.uva.es/desi_23-24/analisisvuelos/-/edit/main/README.md?ref_type=heads#herramientas-usadas).
 
 
-## Usage
+## Uso
 aaaaaaa
 
 
