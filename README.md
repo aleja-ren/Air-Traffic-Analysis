@@ -12,7 +12,7 @@ aaaaaaa
 
 
 ## Vista
-aaaaaaaa
+![captura de la visualizacion](https://gitlab.inf.uva.es/desi_23-24/analisisvuelos/-/blob/main/captura-visualizacion.jpg?raw=true)
 
 ## Herramientas
 Para realizar esta visualización se ha utilizado la librería d3, para más información visitar (https://d3js.org/), también se ha utilizado html y css.
