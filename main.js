@@ -191,7 +191,7 @@ function ready(europe) {
      * @param {event} event - Evento de click del ratón
      */
     let mouseClick = function (event, d) {
-        d3.select("#clickInfo").style("display", "none"); //Cuando clicamos no s emuestra la ayuda de las indicaciones
+        //d3.select("#clickInfo").style("display", "none"); //Cuando clicamos no s emuestra la ayuda de las indicaciones
         svg2.selectAll(".bar").remove();
         svg2.selectAll(".bar-text").remove();
         var d = d3.select(this).data();
