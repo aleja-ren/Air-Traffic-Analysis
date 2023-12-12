@@ -190,6 +190,7 @@ function ready(europe) {
      * Función que maneja cuando hacemos click a un país.
      */
     let mouseClick = function (event, d) {
+        d3.select("#clickInfo").style("display", "none");
         svg2.selectAll(".bar").remove();
         svg2.selectAll(".bar-text").remove();
         var d = d3.select(this).data();
@@ -270,6 +271,19 @@ function ready(europe) {
     };
 
     let barrasDefault = function () {
+
+        // Indicacion para funcionamiento del grafico de barras
+        svg2
+            .append("text")
+            .attr("id", "clickInfo")
+            .attr("x", width2 / 2)
+            .attr("y", height2 + 100)
+            .attr("text-anchor", "middle")
+            .attr("class", "bar-text")
+            .style("font-family", "sans-serif")
+            .style("font-size", "14px")
+            .text("Haz click en el país para ver los datos detallados");
+
         // Vertical line
         svg2.append("line")
             .attr("x1", 0)
