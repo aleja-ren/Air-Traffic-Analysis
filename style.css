@@ -1,10 +1,22 @@
-.content h1 {
-    font-family: sans-serif;
+body {
+    margin: 0;
+    padding: 0;
 }
 
-path {
-    stroke: white;
-    stroke-width: 0.8px;
+.title-container {
+    background-color: #f3c677;
+    padding: 2px;
+    text-align: center;
+    font-family: sans-serif;
+    color: black;
+    width: 99.8%;
+}
+
+.slider-container {
+    display: flex;
+    padding: 2px;
+    align-items: center;
+    justify-content: center;
 }
 
 .content {
@@ -16,6 +28,7 @@ path {
 
 .wrapper {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -32,6 +45,7 @@ path {
     font-size: 12px;
     font-family: sans-serif;
     color: gray;
+    margin-top: 10px;
 }
 
 .bar-text {

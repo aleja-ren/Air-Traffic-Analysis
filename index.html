@@ -4,7 +4,6 @@
 <head>
     <link rel="icon" type="image/png" href="imagen_avion.png" />
     <script src="https://d3js.org/d3.v7.min.js"></script>
-    <!--"https://icons8.com/icon/15121/airplane-take-off"-->
     <title>Mapa vuelos a Europa</title>
 </head>
 <style>
@@ -13,10 +12,15 @@
 
 <body>
     <main class="wrapper">
-        <div class="content">
+        <div class="title-container">
             <h1>Vuelos con destino a cada país de Europa</h1>
-            <input type="range" id="dataSlider" min="1" max="12" value="1" step="1" />
-            <div id="selectedMonthIndicator"></div>
+        </div>
+
+        <div class="slider-container">
+            <div class="content">
+                <input type="range" id="dataSlider" min="1" max="12" value="1" step="1" />
+                <div id="selectedMonthIndicator"></div>
+            </div>
         </div>
     </main>
 
