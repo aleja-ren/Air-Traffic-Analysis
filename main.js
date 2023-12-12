@@ -2,8 +2,6 @@ const width = 800, height = 690; //esto es para el mapa de la izquierda
 
 /*Escala de colores que vamos a usar en el mapa*/
 const legendColors = ["#E7D041", "#CA8A00", "#B54900", "#9A1100", "#780000"];
-//https://hihayk.github.io/scale/#4/3/49/76/96/13/7/1/DCCE00/227/73/119/white
-
 const barchartColors = ["#BCEE68", "#FFB90F", "#FF6A6A"];
 
 
@@ -148,6 +146,7 @@ function ready(europe) {
     /**
      * Función que maneja cuando el ratón deja de estar encima de un país del mapa, desaparecerá la ayuda que indica el país y el número de vuelos
      * con destino a ese pais, cambiará al color y opacidad original a todos los países.
+     * @param {event} event - Evento de movimiento del ratón fuera del pais
      */
     let mouseLeave = function (d) {
         d3.selectAll(".Country")
@@ -169,6 +168,7 @@ function ready(europe) {
 
     /**
      * Función que maneja cuando movemos el ratón, la ayuda que indica el país en el que estamos encima seguirá al ratón.
+     * @param {event} event - Evento de movimiento del ratón dentro del pais
      */
     let mouseMove = function (event, d) {
         var d = d3.select(this).data();
@@ -188,9 +188,10 @@ function ready(europe) {
 
     /**
      * Función que maneja cuando hacemos click a un país.
+     * @param {event} event - Evento de click del ratón
      */
     let mouseClick = function (event, d) {
-        d3.select("#clickInfo").style("display", "none");
+        d3.select("#clickInfo").style("display", "none"); //Cuando clicamos no s emuestra la ayuda de las indicaciones
         svg2.selectAll(".bar").remove();
         svg2.selectAll(".bar-text").remove();
         var d = d3.select(this).data();
@@ -206,9 +207,6 @@ function ready(europe) {
                     ? +data2.find((d) => d.status === status).count
                     : 0,
             }));
-
-            //console.log(completeData[0].count);
-            //valoresAnteriores = [completeData[0].count, completeData[1].count, completeData[2].count]
 
             const x = d3
                 .scaleBand()
@@ -232,7 +230,8 @@ function ready(europe) {
                 .attr("fill", (d, i) => barchartColors[i % barchartColors.length]);
 
             // Transición de entrada de las barras
-            bars.transition()
+            bars
+                .transition()
                 .duration(500)
                 .attr("y", (d) => y(d.count))
                 .attr("height", (d) => height2 - y(d.count));
@@ -253,7 +252,8 @@ function ready(europe) {
 
 
             // Vertical line
-            svg2.append("line")
+            svg2
+                .append("line")
                 .attr("x1", x(1))
                 .attr("y1", 0)
                 .attr("x2", x(1))
@@ -261,12 +261,25 @@ function ready(europe) {
                 .attr("stroke", "black");
 
             // Horizontal line
-            svg2.append("line")
+            svg2
+                .append("line")
                 .attr("x1", 0)
                 .attr("y1", y(0))
                 .attr("x2", width2)
                 .attr("y2", y(0))
                 .attr("stroke", "black");
+
+            // Indicador del pais debajo del diagrama de barras
+            svg2
+                .append("text")
+                .attr("id", "clickInfo")
+                .attr("x", width2 / 2)
+                .attr("y", height2 + 100)
+                .attr("text-anchor", "middle")
+                .attr("class", "bar-text")
+                .style("font-family", "sans-serif")
+                .style("font-size", "14px")
+                .text(d[0].properties.name);
         });
     };
 
@@ -285,7 +298,8 @@ function ready(europe) {
             .text("Haz click en el país para ver los datos detallados");
 
         // Vertical line
-        svg2.append("line")
+        svg2
+            .append("line")
             .attr("x1", 0)
             .attr("y1", 0)
             .attr("x2", 0)
@@ -293,7 +307,8 @@ function ready(europe) {
             .attr("stroke", "black");
 
         // Horizontal line
-        svg2.append("line")
+        svg2
+            .append("line")
             .attr("x1", 0)
             .attr("y1", 400)
             .attr("x2", width2)
@@ -309,19 +324,19 @@ function ready(europe) {
             horizontalTicks.append("line")
                 .attr("class", "tick")
                 .attr("x1", tickWidth)
-                .attr("y1", 395) // Adjust the position of the ticks as needed
+                .attr("y1", 395) // Ajustamos la posicion de los ticks manualmente
                 .attr("x2", tickWidth)
-                .attr("y2", 405) // Adjust the position of the ticks as needed
+                .attr("y2", 405)
                 .attr("stroke", "black");
 
             //Etiquetas de los ticks horizontales
             horizontalTicks.append("text")
                 .attr("x", tickWidth)
-                .attr("y", 395) // Adjust the position of the labels as needed
-                .attr("dy", 20) // Adjust vertical alignment as needed
+                .attr("y", 395) // Ajustamos la posicion de las etiquetas manualmente
+                .attr("dy", 20)
                 .attr("text-anchor", "end")
-                .attr("transform", "rotate(-45, " + tickWidth + ", 415)") // Rotate the text
-                .text(rangoX[i]) // Use your own label values
+                .attr("transform", "rotate(-45, " + tickWidth + ", 415)") // Rotamos el texto de las etiquetas
+                .text(rangoX[i])
                 .style("font-family", "sans-serif")
                 .style("font-size", "10px");
         }
@@ -333,24 +348,24 @@ function ready(europe) {
             const tickHeight = (i / 10) * height2;
             verticalTicks.append("line")
                 .attr("class", "tick")
-                .attr("x1", -5) // Adjust the position of the ticks as needed
+                .attr("x1", -5) // Ajustamos la posicion de los ticks manualmente
                 .attr("y1", tickHeight)
-                .attr("x2", 5) // Adjust the position of the ticks as needed
+                .attr("x2", 5)
                 .attr("y2", tickHeight)
                 .attr("stroke", "black");
 
             //Etiquetas de los ticks verticales
             verticalTicks.append("text")
-                .attr("x", -10) // Adjust the position of the labels as needed
+                .attr("x", -10) // Ajustamos la posicion de las etiquetas manualmente
                 .attr("y", tickHeight)
-                .attr("dy", "0.35em") // Adjust vertical alignment as needed
+                .attr("dy", "0.35em")
                 .attr("text-anchor", "end")
                 .text(rangoY[i])
                 .style("font-family", "sans-serif")
                 .style("font-size", "10px");
         }
     };
-    barrasDefault();
+    barrasDefault(); // Por defecto se muestran los ejes, los ticks y las etiquetas
 
 
 
