@@ -8,7 +8,10 @@
 </details>
 
 ## Descripción
-aaaaaaa
+Visualización sobre los vuelos con destino a paises europeos con el [dataset](https://www.kaggle.com/datasets/iamsouravbanerjee/airline-dataset/data), los datos provienen de una simulación con una herramienta que permite hacer datasets sintéticos que se asemejan mucho a datos reales.
+En la visualización tenemos un mapa coroplético donde cada país está coloreado siguiendo una escala de colores dependiendo de los vuelos que llegan a ese país ese mes.
+<br>
+A la derecha del mapa tenemos un diagrama de barras con los datos detallados de los vuelos, cuantos han llegado a tiempo, con retraso y cuantos han sido cancelados.
 
 
 ## Vista
@@ -20,7 +23,12 @@ Las herramientas web para realizar la escala de color del mapa está referenciad
 
 
 ## Uso
-aaaaaaa
+En la parte superior de la visualización tenemos un slider para cambiar el mes que queremos visualizar, los datos del mapa cambiarán automaticamente.
+<br>
+Si pasamos el ratón por encima de cada país, se mostrará un tooltip que indica el nombre del país y el número de vuelos que llegan a ese pais.
+<br>
+Si clicamos en el país, se mostrarán los datos detallados en el diagrama de barras correspondiente a ese país.
+Si estamos mostrando datos en el diagrama de barras, al cambiar el slider se reseteará para no inducir a confusiones.
 
 
 
@@ -33,6 +41,13 @@ Alejandra Gavino-Dias González (alejandra.gavino-dias@estudiantes.uva.es)
 - https://icons8.com/icon/15121/airplane-take-off
 
 ### Referencias
+- https://d3-graph-gallery.com/graph/choropleth_basic.html
+- https://d3-graph-gallery.com/graph/interactivity_tooltip.html
+- https://codepen.io/bwiacek/pen/pXZEvK
+- https://github.com/leakyMirror/map-of-europe/tree/master/GeoJSON
+- https://observablehq.com/@d3/color-legend
+- https://observablehq.com/@d3/bar-chart/2
+- https://d3-graph-gallery.com/graph/barplot_animation_start.html
 
 
 ### Herramientas usadas
