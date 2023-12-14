@@ -408,7 +408,7 @@ function ready(europe) {
         .attr("fill", "#000")
         .attr("text-anchor", "start")
         .attr("font-weight", "bold")
-        .text("Número de vuelos");
+        .text("Número de viajeros");
 
     /*Muestro los colores de la leyenda*/
     for (var i = 0; i < legendColors.length; i++) {
