@@ -131,7 +131,7 @@ Promise.all(promises).then(function (data) {
 function ready(europe) {
     /**
      * Funcion que maneja cuando pasamos el ratón por encima de un pais del mapa, mostrará una ayuda indicando el pais señalado y
-     * el número de vuelos con destino a ese pais, cambiará el color del país por el que pasamos encima a uno más intenso y al resto
+     * el número de viajeros con destino a ese pais, cambiará el color del país por el que pasamos encima a uno más intenso y al resto
      * les cambia la opacidad.
      */
     let mouseOver = function (d) {
@@ -144,7 +144,7 @@ function ready(europe) {
     };
 
     /**
-     * Función que maneja cuando el ratón deja de estar encima de un país del mapa, desaparecerá la ayuda que indica el país y el número de vuelos
+     * Función que maneja cuando el ratón deja de estar encima de un país del mapa, desaparecerá la ayuda que indica el país y el número de viajeros
      * con destino a ese pais, cambiará al color y opacidad original a todos los países.
      * @param {event} event - Evento de movimiento del ratón fuera del pais
      */
