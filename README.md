@@ -25,11 +25,14 @@ Las herramientas web para realizar la escala de color del mapa está referenciad
 
 ## Uso
 En la parte superior de la visualización tenemos un slider para cambiar el mes que queremos visualizar, los datos del mapa cambiarán automaticamente.
+Un texto bajo el slider indicará el mes que estamos mostrando.
 <br>
 Si pasamos el ratón por encima de cada país, se mostrará un tooltip que indica el nombre del país y el número de vuelos que llegan a ese pais.
 <br>
 Si clicamos en el país, se mostrarán los datos detallados en el diagrama de barras correspondiente a ese país.
 Si estamos mostrando datos en el diagrama de barras, al cambiar el slider se reseteará para no inducir a confusiones.
+En la parte inferior del diagrama de barras se mostrará una ayuda para indicar que si se selecciona un país se mostrarán los datos detallados.
+Cuando se estén mostrando los datos de un país en el diagrama de barras, se indicará el país al que corresponden con un texto en la parte inferior.
 
 
 
