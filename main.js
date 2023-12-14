@@ -177,7 +177,7 @@ function ready(europe) {
             .html(
                 "Pais: " +
                 d[0].properties.name +
-                "<br> Vuelos: " +
+                "<br> Viajeros: " +
                 (mapa.has(d[0].properties.name)
                     ? mapa.get(d[0].properties.name)
                     : 0)
