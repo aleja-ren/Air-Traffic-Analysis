@@ -52,7 +52,6 @@ Alejandra Gavino-Dias González (alejandra.gavino-dias@estudiantes.uva.es)
 - https://observablehq.com/@d3/color-legend
 - https://observablehq.com/@d3/bar-chart/2
 - https://d3-graph-gallery.com/graph/barplot_animation_start.html
-- visualización de Alejando Miñambres
 
 
 ### Herramientas usadas
