@@ -1,11 +1,11 @@
 # AnalisisVuelos
 <details><summary>Table of Conents</summary>
 
-1. [Descripción](https://gitlab.inf.uva.es/desi_23-24/analisisvuelos/-/tree/main#descripci%C3%B3n)
-2. [Vista](https://gitlab.inf.uva.es/desi_23-24/analisisvuelos/-/tree/main#vista)
-3. [Herramientas](https://gitlab.inf.uva.es/desi_23-24/analisisvuelos/-/tree/main#herramientas)
-4. [Uso](https://gitlab.inf.uva.es/desi_23-24/analisisvuelos/-/tree/main#uso)
-5. [Autor y Referencias](https://gitlab.inf.uva.es/desi_23-24/analisisvuelos/-/tree/main#autor-y-referencias)
+1. [Descripción](https://github.com/aleja-ren/Air-Traffic-Analysis/edit/main/README.md#descripci%C3%B3n)
+2. [Vista](https://github.com/aleja-ren/Air-Traffic-Analysis/edit/main/README.md#vista)
+3. [Herramientas](https://github.com/aleja-ren/Air-Traffic-Analysis/edit/main/README.md#herramientas)
+4. [Uso](https://github.com/aleja-ren/Air-Traffic-Analysis/edit/main/README.md#uso)
+5. [Autor y Referencias](https://github.com/aleja-ren/Air-Traffic-Analysis/edit/main/README.md#autor-y-referencias)
 </details>
 
 ## Descripción
@@ -20,7 +20,6 @@ A la derecha del mapa tenemos un diagrama de barras con los datos detallados, cu
 
 ## Herramientas
 Para realizar esta visualización se ha utilizado la librería d3, para más información visitar (https://d3js.org/), también se ha utilizado html y css.
-Las herramientas web para realizar la escala de color del mapa está referenciada en las [herramientas usadas](https://gitlab.inf.uva.es/desi_23-24/analisisvuelos/-/edit/main/README.md?ref_type=heads#herramientas-usadas).
 
 
 ## Uso
