@@ -1,4 +1,5 @@
 # AnalisisVuelos
+![Preview](https://raw.githack.com/aleja-ren/Air-Traffic-Analysis/main/index.html)
 ## Descripción
 Visualización sobre los viajeros que vuelan con destino a paises europeos con el [dataset](https://www.kaggle.com/datasets/iamsouravbanerjee/airline-dataset/data), los datos provienen de una simulación con una herramienta que permite hacer datasets sintéticos que se asemejan mucho a datos reales.
 En la visualización tenemos un mapa coroplético donde cada país está coloreado siguiendo una escala de colores dependiendo de los viajeros que llegan a ese país ese mes.
