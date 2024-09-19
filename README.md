@@ -1,13 +1,4 @@
 # AnalisisVuelos
-<details><summary>Table of Conents</summary>
-
-1. [Descripción](https://github.com/aleja-ren/Air-Traffic-Analysis/edit/main/README.md#descripci%C3%B3n)
-2. [Vista](https://github.com/aleja-ren/Air-Traffic-Analysis/edit/main/README.md#vista)
-3. [Herramientas](https://github.com/aleja-ren/Air-Traffic-Analysis/edit/main/README.md#herramientas)
-4. [Uso](https://github.com/aleja-ren/Air-Traffic-Analysis/edit/main/README.md#uso)
-5. [Autor y Referencias](https://github.com/aleja-ren/Air-Traffic-Analysis/edit/main/README.md#autor-y-referencias)
-</details>
-
 ## Descripción
 Visualización sobre los viajeros que vuelan con destino a paises europeos con el [dataset](https://www.kaggle.com/datasets/iamsouravbanerjee/airline-dataset/data), los datos provienen de una simulación con una herramienta que permite hacer datasets sintéticos que se asemejan mucho a datos reales.
 En la visualización tenemos un mapa coroplético donde cada país está coloreado siguiendo una escala de colores dependiendo de los viajeros que llegan a ese país ese mes.
