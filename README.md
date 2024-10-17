@@ -1,50 +1,38 @@
-# AnalisisVuelos
-## Descripción
-Visualización sobre los viajeros que vuelan con destino a paises europeos con el [dataset](https://www.kaggle.com/datasets/iamsouravbanerjee/airline-dataset/data), los datos provienen de una simulación con una herramienta que permite hacer datasets sintéticos que se asemejan mucho a datos reales.
-En la visualización tenemos un mapa coroplético donde cada país está coloreado siguiendo una escala de colores dependiendo de los viajeros que llegan a ese país ese mes.
-<br>
-A la derecha del mapa tenemos un diagrama de barras con los datos detallados, cuantos viajeros han llegado a tiempo y cuántos han sufrido retrasos y cancelaciones.
+# FlightAnalysis
 
+## Description
+Visualization of travelers flying to European countries using data from a simulated [dataset](https://www.kaggle.com/datasets/iamsouravbanerjee/airline-dataset/data) created with a synthetic data generation tool, closely resembling real-world data. The visualization includes a choropleth map where each country is colored based on the number of travelers arriving each month.
 
-## Vista
-![Captura visualización datos España en enero](captura-visualizacion.jpg)
+To the right of the map, a bar chart provides detailed information on how many travelers arrived on time, faced delays, or experienced cancellations.
 
-## Herramientas
-Para realizar esta visualización se ha utilizado la librería d3, para más información visitar (https://d3js.org/), también se ha utilizado html y css.
+## View
+![Data Visualization of Spain in January](captura-visualizacion.jpg)
 
+## Tools
+This visualization was created using the D3 library. For more details, visit [D3's website](https://d3js.org/). Additionally, HTML and CSS were used.
 
-## Uso
-En la parte superior de la visualización tenemos un slider para cambiar el mes que queremos visualizar, los datos del mapa cambiarán automaticamente.
-Un texto bajo el slider indicará el mes que estamos mostrando.
-<br>
-Si pasamos el ratón por encima de cada país, se mostrará un tooltip que indica el nombre del país y el número de viajeros que llegan a ese pais.
-<br>
-Si clicamos en el país, se mostrarán los datos detallados en el diagrama de barras correspondiente a ese país.
-Si estamos mostrando datos en el diagrama de barras, al cambiar el slider se reseteará para no inducir a confusiones.
-En la parte inferior del diagrama de barras se mostrará una ayuda para indicar que si se selecciona un país se mostrarán los datos detallados.
-Cuando se estén mostrando los datos de un país en el diagrama de barras, se indicará el país al que corresponden con un texto en la parte inferior.
+## Usage
+At the top, a slider allows selection of the month to visualize, updating the map data automatically. Text under the slider indicates the displayed month.
 
+Hovering over a country shows a tooltip with the country name and the number of incoming travelers. Clicking on a country displays detailed data in the bar chart for that country. Changing the month resets the chart to avoid confusion. A hint at the bottom of the bar chart indicates the functionality for selecting a country.
 
+When displaying a country’s data in the bar chart, the selected country name appears below.
 
-## Autor y Referencias
+## Author and References
 Alejandra Gavino-Dias González (alejandra.gavino-dias@estudiantes.uva.es)
 
-### Fuentes
-- https://www.flightradar24.com
-- https://www.kaggle.com/datasets/iamsouravbanerjee/airline-dataset/data
-- https://icons8.com/icon/15121/airplane-take-off
+### Sources
+- [Flightradar24](https://www.flightradar24.com)
+- [Kaggle Airline Dataset](https://www.kaggle.com/datasets/iamsouravbanerjee/airline-dataset/data)
+- [Airplane Icon](https://icons8.com/icon/15121/airplane-take-off)
 
-### Referencias
-- https://d3-graph-gallery.com/graph/choropleth_basic.html
-- https://d3-graph-gallery.com/graph/interactivity_tooltip.html
-- https://codepen.io/bwiacek/pen/pXZEvK
-- https://github.com/leakyMirror/map-of-europe/tree/master/GeoJSON
-- https://observablehq.com/@d3/color-legend
-- https://observablehq.com/@d3/bar-chart/2
-- https://d3-graph-gallery.com/graph/barplot_animation_start.html
+### References
+- [Choropleth Map Example](https://d3-graph-gallery.com/graph/choropleth_basic.html)
+- [Tooltip Interactivity Example](https://d3-graph-gallery.com/graph/interactivity_tooltip.html)
+- [Europe GeoJSON Map](https://github.com/leakyMirror/map-of-europe/tree/master/GeoJSON)
+- [Color Legend](https://observablehq.com/@d3/color-legend)
+- [Bar Chart Animation](https://d3-graph-gallery.com/graph/barplot_animation_start.html)
 
-
-### Herramientas usadas
-- https://hihayk.github.io/scale/#4/3/49/76/96/13/7/1/DCCE00/227/73/119/white
-- https://coolors.co/
-
+### Tools Used
+- [Color Scale Tool](https://hihayk.github.io/scale/#4/3/49/76/96/13/7/1/DCCE00/227/73/119/white)
+- [Coolors](https://coolors.co/)
